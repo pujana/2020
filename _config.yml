@@ -4,6 +4,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "cog"
 # the subpath of your site, e.g. /blog
 url: "https://pujana.github.io"
+site.github.url: https://pujana.github.io
 #url: "Your-Link.github.io" # the base hostname & protocol for your site
 #baseurl: "cog2020" 
 # the subpath of your site, e.g. /blog
