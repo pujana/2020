@@ -1,7 +1,7 @@
 title: IEEE Conference on Games (CoG) 2020
 description: > # this means to ignore newlines until "baseurl:"
   Your description
-baseurl: ""
+baseurl: "/cog"
 # the subpath of your site, e.g. /blog
 url: "https://pujana.github.io"
 site.github.url: https://pujana.github.io
