@@ -10,7 +10,7 @@ url: "https://pujana.github.io"
 #url: "" 
 #"https://pujana.github.io" # the base hostname & protocol for your site
 # Build settings
-markdown: kramdown
+markdown: kramdowns
 
 facebook:
   app_id: 
