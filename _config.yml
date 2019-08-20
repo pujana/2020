@@ -6,7 +6,7 @@ baseurl: "/cog"
 url: ""
 #site.github.url: https://pujana.github.io
 #url: "Your-Link.github.io" # the base hostname & protocol for your site
-#baseurl: "cog2020" 
+#baseurlhttps://pujana.github.io/css/logos/CIS.jpg: "cog2020" 
 # the subpath of your site, e.g. /blog
 #url: "" 
 #"https://pujana.github.io" # the base hostname & protocol for your site
