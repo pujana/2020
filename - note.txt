@@ -5,3 +5,13 @@ http://localhost:4000/
 
 
 3cb371 >> c91038
+
+
+
+
+src="{{ '/css/cog_logo.png' | prepend: site.baseurl }}"
+
+src="css/logos/VS-Games Logo 2.jpg"
+
+
+
