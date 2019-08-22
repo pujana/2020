@@ -1,14 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-
-<div id="slideshow">
-   <div>
-     <img src="http://farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
-   </div>
-   <div>
-     <img src="http://farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
-   </div>
-   <div>
-     Pretty cool eh? This slide is proof the content can be anything.
-   </div>
+<div class="w3-content w3-section" style="max-width:500px">
+<!-- <p>The w3-animate-fading class animates an element in and out (takes about 10 seconds).</p> -->
+  <img class="mySlides w3-animate-fading" src="css/photos/1.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="css/photos/2.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="css/photos/3.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="css/photos/4.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="css/photos/5.jpg" style="width:100%">
 </div>
 
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 9000);    
+}
+</script>
+
+</body>
+</html>
