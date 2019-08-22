@@ -1,207 +1,316 @@
+<style>
+	
+	.ppdropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	}
+	
+	.ppdropdown {
+	position: relative;
+	display: inline-block;
+	}
+	
+	.ppdropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #575757;
+	min-width: 250px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	}
+	
+	.ppdropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	}
+	
+	.ppdropdown-content a:hover {background-color: #ddd;}
+	
+	.ppdropdown:hover .ppdropdown-content {display: block;}
+	
+	.ppdropdown:hover .ppdropdown-toggle {background-color: #3e8e41;
+	}
+</style>
+<!--
+	https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown_hover
+-->
+
 <link rel="shortcut icon" type="image/ico" href="css/cog_logo.ico">
 <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-default-color navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            
-
-            <!-- 
+<nav class="navbar navbar-default navbar-default-color navbar-fixed-top">
+	<div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		
+		
+		<!-- 
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="/"><img src="../css/cog_logo.png" style="margin-top:-15px" width="50px" alt="icon-about"></a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand page-scroll" href="/"><img src="../css/cog_logo.png" style="margin-top:-15px" width="50px" alt="icon-about"></a>
             </div>
-				-->
-			 <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-					<li >
-                        <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+		-->
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li >
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						
+						
+						<!-- <a class="navbar-brand page-scroll" href="/"><img src="{{ '/css/cog_logo.png' | prepend: site.baseurl }}" style="margin-top:-15px" width="50px" alt="icon-about"></a>
+						-->
+						
+						<a class="navbar-brand page-scroll" href="{{ "/" | prepend: site.baseurl }}"><img src="{{ '/css/cog_logo.png' | prepend: site.baseurl }}" style="margin-top:-15px" width="50px" alt="icon-about"></a>
+					</div>
+				</li>
+				<li class="hidden">
+					<a href="/"></a>
+				</li>
 				
-				
-			 <!-- <a class="navbar-brand page-scroll" href="/"><img src="{{ '/css/cog_logo.png' | prepend: site.baseurl }}" style="margin-top:-15px" width="50px" alt="icon-about"></a>
-				 -->
-			 
-                <a class="navbar-brand page-scroll" href="{{ "/" | prepend: site.baseurl }}"><img src="{{ '/css/cog_logo.png' | prepend: site.baseurl }}" style="margin-top:-15px" width="50px" alt="icon-about"></a>
-            </div>
-                    </li>
-                    <li class="hidden">
-                        <a href="/"></a>
-                    </li>
+				<!--
+					<li >	
+					<div class="dropdown">
+					<button class="dropbtn">Dropdown</button>
+					<div class="dropdown-content">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+					</div>
+					</div>
+					</li>
 					
 					
 					<li class="dropdown">
-                                <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#intro">Info</a>
-                                <ul class="dropdown-menu">
-                                    
-                                        <li><a href="/#important_dates">Important dates</a></li>
-                                    
-                                        <li><a href="/topics">Topics and tracks</a></li>
-                                    
-                                        <li><a href="/author_guidelines">Author guidelines</a></li>
-                                    
-                                </ul>
-                            </li>
-                        
-                    
-                        <!-- 
-                            
-                                <li>
-                                    <a class="page-scroll" href="/registration">Registration</a>
-                                </li>
-                            -->
-                        
-                    
-                        
-                            <li class="dropdown">
-                                <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#calls">Calls</a>
-                                <ul class="dropdown-menu">
-                                    
-                                        <li><a href="/cfp">Call for Papers</a></li>
-                                    
-                                        <li><a href="/call_industry_talks">Call for industry talks</a></li>
-                                    
-                                        <li><a href="/tutorials">Call for tutorials</a></li>
-                                    
-                                        <li><a href="/competitions">Call for competitions</a></li>
-                                    
-                                        <li><a href="/special_sessions">Call for Sp. Sessions proposals</a></li>
-                                    
-                                </ul>
-                            </li>
-                        
-                            <li class="dropdown">
-                                <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#sponsorship">Sponsorships</a>
-                                <ul class="dropdown-menu">
-                                    
-                                        <li><a href="/call_sponsors">Call for Sponsors</a></li>
-                                    
-                                        <li><a href="/sponsors">Sponsors</a></li>
-                                    
-                                </ul>
-                            </li>
-                        
-                    
-                        <!-- 
-                            <li class="dropdown">
-                                <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#program">Program</a>
-                                <ul class="dropdown-menu">
-                                    
-                                        <li><a href="/program">Program</a></li>
-                                    
-                                        <li><a href="/proceedings">Proceedings</a></li>
-                                    
-                                        <li><a href="/competitions_conference">Competitions</a></li>
-                                    
-                                        <li><a href="/tutorials_conference">Tutorials</a></li>
-                                    
-                                        <li><a href="/industry_day">Industry Day</a></li>
-                                    
-                                        <li><a href="/keynotes">Keynotes</a></li>
-                                    
-                                        <li><a href="/welcome_reception">Welcome reception</a></li>
-                                    
-                                        <li><a href="/games_night">Games night</a></li>
-                                    
-                                </ul>
-                            </li>
-                        
-                    
-                        
-                            <li class="dropdown">
-                                <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#sp_sessions">Sp. Sessions</a>
-                                <ul class="dropdown-menu">
-                                    
-                                        <li><a href="/special_session_esports">Esports</a></li>
-                                    
-                                        <li><a href="/special_session_matchmaking">Matchmaking</a></li>
-                                    
-                                </ul>
-                            </li>
-                        
-						-->
-                        
-                    
-                        
-                            <li class="dropdown">
-                                <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#travel">Travel</a>
-                                <ul class="dropdown-menu">
-                                    
-                                        <li><a href="/travel">Information</a></li>
-                                    
-                                        <li><a href="/accommodation">Accommodation</a></li>
-                                    
-                                        <li><a href="/venue">Venue</a></li>
-                                    
-                                        <li><a href="/travel_grants">Travel grants</a></li>
-                                    
-                                </ul>
-                            </li>
-                        
-                    
-                        
-                            <li class="dropdown">
-                                <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#organisation">Organisation</a>
-                                <ul class="dropdown-menu">
-                                    
-                                        <li><a href="/committee">Committee</a></li>
-                                    
-                                        <li><a href="/track_chairs">Track Chairs</a></li>
-                                    
-                                </ul>
-                            </li>
-                        
-                    
-                        
-                            <li class="dropdown">
-                                <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#contact">Contact</a>
-                                <ul class="dropdown-menu">
-                                    
-                                        <li><a href="/#contact">Contact Us</a></li>
-                                    
-                                        <li><a href="http://www.ice.ci.ritsumei.ac.jp/cog2020/" target="_blank">CoG 2020</a></li>
-                                    
-                                </ul>
-                            </li>
-							
-							
-                            <li class="dropdown">
-                                <a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#previousfuture">PREVIOUS AND FUTURE CONFERENCES</a>
-                            </li>
-							<!--
-                    <li>
-                        <a class="page-scroll" href="#speakers">Info</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#speakers">Speakers</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-							-->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#intro">Info</a>
+					<ul class="dropdown-menu">
+					
+					<li><a href="/#important_dates">Important dates</a></li>
+					
+					<li><a href="/topics">Topics and tracks</a></li>
+					
+					<li><a href="/author_guidelines">Author guidelines</a></li>
+					
+					</ul>
+					</li>
+				-->
+				
+				
+				
+				<!--
+				<li class="dropdown ppdropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#intro">Info</a>
+					<ul class="dropdown-menu">
+						
+						<li><a href="/#important_dates">Important dates</a></li>
+						
+						<li><a href="/topics">Topics and tracks</a></li>
+						
+						<li><a href="/author_guidelines">Author guidelines</a></li>
+						
+					</ul>
+					
+					<div class="ppdropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</li>
+				
+				-->
+				
+				
+				<li class="ppdropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#intro">Info</a>
+					<div class="ppdropdown-content">
+						<a href="/#important_dates">Important dates</a>
+				<a href="/topics">Topics and tracks</a>
+			<a href="/author_guidelines">Author guidelines</a>
+					</div>
+				</li>
+				
+				<!-- 
+					
+					
+					<li class="dropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#intro">Info</a>
+					<ul class="dropdown-menu">
+					
+					<li><a href="/#important_dates">Important dates</a></li>
+					
+					<li><a href="/topics">Topics and tracks</a></li>
+					
+					<li><a href="/author_guidelines">Author guidelines</a></li>
+					
+					</ul>
+					</li>
+					
+					
+					
+					
+					
+					
+					
+					
+					<li>
+					<a class="page-scroll" href="/registration">Registration</a>
+					</li>
+				-->
+				
+				
+				
+				<li class="dropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#calls">Calls</a>
+					<ul class="dropdown-menu">
+						
+						<li><a href="/cfp">Call for Papers</a></li>
+						
+						<li><a href="/call_industry_talks">Call for industry talks</a></li>
+						
+						<li><a href="/tutorials">Call for tutorials</a></li>
+						
+						<li><a href="/competitions">Call for competitions</a></li>
+						
+						<li><a href="/special_sessions">Call for Sp. Sessions proposals</a></li>
+						
+					</ul>
+				</li>
+				
+				<li class="dropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#sponsorship">Sponsorships</a>
+					<ul class="dropdown-menu">
+						
+						<li><a href="/call_sponsors">Call for Sponsors</a></li>
+						
+						<li><a href="/sponsors">Sponsors</a></li>
+						
+					</ul>
+				</li>
+				
+				
+				<!-- 
+					<li class="dropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#program">Program</a>
+					<ul class="dropdown-menu">
+					
+					<li><a href="/program">Program</a></li>
+					
+					<li><a href="/proceedings">Proceedings</a></li>
+					
+					<li><a href="/competitions_conference">Competitions</a></li>
+					
+					<li><a href="/tutorials_conference">Tutorials</a></li>
+					
+					<li><a href="/industry_day">Industry Day</a></li>
+					
+					<li><a href="/keynotes">Keynotes</a></li>
+					
+					<li><a href="/welcome_reception">Welcome reception</a></li>
+					
+					<li><a href="/games_night">Games night</a></li>
+					
+					</ul>
+					</li>
+					
+					
+					
+					<li class="dropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#sp_sessions">Sp. Sessions</a>
+					<ul class="dropdown-menu">
+					
+					<li><a href="/special_session_esports">Esports</a></li>
+					
+					<li><a href="/special_session_matchmaking">Matchmaking</a></li>
+					
+					</ul>
+					</li>
+					
+				-->
+				
+				
+				
+				<li class="dropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#travel">Travel</a>
+					<ul class="dropdown-menu">
+						
+						<li><a href="/travel">Information</a></li>
+						
+						<li><a href="/accommodation">Accommodation</a></li>
+						
+						<li><a href="/venue">Venue</a></li>
+						
+						<li><a href="/travel_grants">Travel grants</a></li>
+						
+					</ul>
+				</li>
+				
+				
+				
+				<li class="dropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#organisation">Organisation</a>
+					<ul class="dropdown-menu">
+						
+						<li><a href="/committee">Committee</a></li>
+						
+						<li><a href="/track_chairs">Track Chairs</a></li>
+						
+					</ul>
+				</li>
+				
+				
+				
+				<li class="dropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#contact">Contact</a>
+					<ul class="dropdown-menu">
+						
+						<li><a href="/#contact">Contact Us</a></li>
+						
+						<li><a href="http://www.ice.ci.ritsumei.ac.jp/cog2020/" target="_blank">CoG 2020</a></li>
+						
+					</ul>
+				</li>
+				
+				
+				<li class="dropdown">
+					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" href="#previousfuture">PREVIOUS AND FUTURE CONFERENCES</a>
+				</li>
+				<!--
+					<li>
+					<a class="page-scroll" href="#speakers">Info</a>
+					</li>
+					<li>
+					<a class="page-scroll" href="#speakers">Speakers</a>
+					</li>
+					<li>
+					<a class="page-scroll" href="#about">About</a>
+					</li>
+					<li>
+					<a class="page-scroll" href="#contact">Contact</a>
+					</li>
+				-->
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>
 
 <!--
-        {% for page in site.pages %}
-          {% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
-        {% endfor %}
- -->
+	{% for page in site.pages %}
+	{% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
+	{% endfor %}
+-->
 
