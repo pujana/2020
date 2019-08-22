@@ -1,174 +1,683 @@
-    <section id="important_dates">
+<head>
+  <link rel="import" href="table.html">
+</head>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+	
+	<style type="text/css">
+	body
+  font-family: 'Helvetica Neue', Helvetica, Arial
+  font-size: 14px
+  line-height: 20px
+  font-weight: 400
+  color: #3b3b3b
+  -webkit-font-smoothing: antialiased
+  font-smoothing: antialiased
+  background: #2b2b2b
+  
+  @media screen and (max-width: 580px)
+    font-size: 16px
+    line-height: 22px
+
+.wrapper
+  margin: 0 auto
+  padding: 40px
+  max-width: 800px
+
+.table
+  margin: 0 0 40px 0
+  width: 100%
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2)
+  display: table
+  @media screen and (max-width: 580px)
+    display: block
+
+.row
+  display: table-row
+  background: #f6f6f6
+  
+  &:nth-of-type(odd)
+    background: #e9e9e9
+  
+  &.header
+    font-weight: 900
+    color: #ffffff
+    background: #ea6153
+  
+  &.green
+    background: #27ae60
+  
+  &.blue
+    background: #2980b9
+   
+  @media screen and (max-width: 580px)
+    padding: 14px 0 7px
+    display: block
+    
+    &.header
+      padding: 0
+      height: 6px
+      
+      .cell
+        display: none
+    
+    .cell
+      margin-bottom: 10px
+      
+      &:before
+        margin-bottom: 3px
+        content: attr(data-title)
+        min-width: 98px
+        font-size: 10px
+        line-height: 10px
+        font-weight: bold
+        text-transform: uppercase
+        color: #969696
+        display: block
+
+.cell
+  padding: 6px 12px
+  display: table-cell
+  @media screen and (max-width: 580px)
+    padding: 2px 16px
+    display: block
+	</style>
+	
+	
+	<body>
+	
+	
+	
+	
+	<table class="agenda">
+            <thead>
+                <tr>
+                    <th class="row-1 agenda-time"><center>Time</center></th>
+                    <th class="row-2 agenda-activity"><center>Activity</center></th>  
+                </tr>
+            </thead>
+
+            {% for agenda in site.data.twenty_16.agendas_1 %}
+                <tr>
+                    <td>{{ agenda.time }}</td>
+                    <td>{{ agenda.info }}</td>
+                </tr> 
+            {% endfor %}
+        </table>
+		
+		
+		
+		
+	
+	
+	<table id="customers">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Christina Berglund</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Königlich Essen</td>
+    <td>Philip Cramer</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>Simon Crowther</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris spécialités</td>
+    <td>Marie Bertrand</td>
+    <td>France</td>
+  </tr>
+</table>
+
+
+
+
+
+
+	<table>
+			<colgroup>
+				<col width="30%" />
+				<col width="70%" />
+			</colgroup>
+			<thead>
+				<tr class="header">
+					<th>Field</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td markdown="span">First column **fields**</td>
+					<td markdown="span">Some descriptive text. This is a markdown link to [Google](http://google.com). Or see [some link][mydoc_tags].</td>
+				</tr>
+				<tr>
+					<td markdown="span">Second column **fields**</td>
+					<td markdown="span">Some more descriptive text.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
+
+
+
+<link rel="stylesheet" href="pstyle.css">
+<section id="important_dates">
     <div class="container">
+		
+		
+		<table>
+			<colgroup>
+				<col width="30%" />
+				<col width="70%" />
+			</colgroup>
+			<thead>
+				<tr class="header">
+					<th>Field</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td markdown="span">First column **fields**</td>
+					<td markdown="span">Some descriptive text. This is a markdown link to [Google](http://google.com). Or see [some link][mydoc_tags].</td>
+				</tr>
+				<tr>
+					<td markdown="span">Second column **fields**</td>
+					<td markdown="span">Some more descriptive text.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		
+		
+		
+		
+		
+		
+		<div class="wrapper">
+			
+			<div class="table">
+				
+				<div class="row header">
+					<div class="cell">
+						Name
+					</div>
+					<div class="cell">
+						Age
+					</div>
+					<div class="cell">
+						Occupation
+					</div>
+					<div class="cell">
+						Location
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Name">
+						Luke Peters
+					</div>
+					<div class="cell" data-title="Age">
+						25
+					</div>
+					<div class="cell" data-title="Occupation">
+						Freelance Web Developer
+					</div>
+					<div class="cell" data-title="Location">
+						Brookline, MA
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Name">
+						Joseph Smith
+					</div>
+					<div class="cell" data-title="Age">
+						27
+					</div>
+					<div class="cell" data-title="Occupation">
+						Project Manager
+					</div>
+					<div class="cell" data-title="Location">
+						Somerville, MA
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Name">
+						Maxwell Johnson
+					</div>
+					<div class="cell" data-title="Age">
+						26
+					</div>
+					<div class="cell" data-title="Occupation">
+						UX Architect & Designer
+					</div>
+					<div class="cell" data-title="Location">
+						Arlington, MA
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Name">
+						Harry Harrison
+					</div>
+					<div class="cell" data-title="Age">
+						25
+					</div>
+					<div class="cell" data-title="Occupation">
+						Front-End Developer
+					</div>
+					<div class="cell" data-title="Location">
+						Boston, MA
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="table">
+				
+				<div class="row header green">
+					<div class="cell">
+						Product
+					</div>
+					<div class="cell">
+						Unit Price
+					</div>
+					<div class="cell">
+						Quantity
+					</div>
+					<div class="cell">
+						Date Sold
+					</div>
+					<div class="cell">
+						Status
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Product">
+						Solid oak work table
+					</div>
+					<div class="cell" data-title="Unit Price">
+						$800
+					</div>
+					<div class="cell" data-title="Quantity">
+						10
+					</div>
+					<div class="cell" data-title="Date Sold">
+						03/15/2014
+					</div>
+					<div class="cell" data-title="Status">
+						Waiting for Pickup
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Product">
+						Leather iPhone wallet
+					</div>
+					<div class="cell" data-title="Unit Price">
+						$45
+					</div>
+					<div class="cell" data-title="Quantity">
+						120
+					</div>
+					<div class="cell" data-title="Date Sold">
+						02/28/2014
+					</div>
+					<div class="cell" data-title="Status">
+						In Transit
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Product">
+						27" Apple Thunderbolt displays
+					</div>
+					<div class="cell" data-title="Unit Price">
+						$1000
+					</div>
+					<div class="cell" data-title="Quantity">
+						25
+					</div>
+					<div class="cell" data-title="Date Sold">
+						02/10/2014
+					</div>
+					<div class="cell" data-title="Status">
+						Delivered
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Product">
+						Bose studio headphones
+					</div>
+					<div class="cell" data-title="Unit Price">
+						$60
+					</div>
+					<div class="cell" data-title="Quantity">
+						90
+					</div>
+					<div class="cell" data-title="Date Sold">
+						01/14/2014
+					</div>
+					<div class="cell" data-title="Status">
+						Delivered
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="table">
+				
+				<div class="row header blue">
+					<div class="cell">
+						Username
+					</div>
+					<div class="cell">
+						Email
+					</div>
+					<div class="cell">
+						Password
+					</div>
+					<div class="cell">
+						Active
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Username">
+						ninjalug
+					</div>
+					<div class="cell" data-title="Email">
+						misterninja@hotmail.com
+					</div>
+					<div class="cell" data-title="Password">
+						************
+					</div>
+					<div class="cell" data-title="Active">
+						Yes
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Username">
+						jsmith41
+					</div>
+					<div class="cell" data-title="Email">
+						joseph.smith@gmail.com
+					</div>
+					<div class="cell" data-title="Password">
+						************
+					</div>
+					<div class="cell" data-title="Active">
+						No
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Username">
+						1337hax0r15
+					</div>
+					<div class="cell" data-title="Email">
+						hackerdude1000@aol.com
+					</div>
+					<div class="cell" data-title="Password">
+						************
+					</div>
+					<div class="cell" data-title="Active">
+						Yes
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="cell" data-title="Username">
+						hairyharry19
+					</div>
+					<div class="cell" data-title="Email">
+						harryharry@gmail.com
+					</div>
+					<div class="cell" data-title="Password">
+						************
+					</div>
+					<div class="cell" data-title="Active">
+						Yes
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Important dates</h2>
                 <h3 class="section-subheading text-muted"></h3>
-            </div>
-        </div>
-
+			</div>
+		</div>
+		
         <div style="overflow-x:auto;">
-        <table class="hometable">
-            <thead>
-                <tr class="header">
-                    <th>Submission type</th>
-                    <th>Deadline<sup>1</sup></th>
-                    <th>Notif.</th>
-                    <th>Camera Ready</th>
-                </tr>
-            </thead>
-            <tbody>
-                 
+			<table class="hometable">
+				<thead>
+					<tr class="header">
+						<th>Submission type</th>
+						<th>Deadline<sup>1</sup></th>
+						<th>Notif.</th>
+						<th>Camera Ready</th>
+					</tr>
+				</thead>
+				<tbody>
+					
                     <tr class="">
                         <td markdown="span" class="leftcell">Competitions and tutorials<sup></sup></td>
                         <td markdown="span" >
-                        
+							
                             <strike>15th February</strike>
+							
+						</td>
                         
-                        </td>
-                        
-                            <td markdown="span" >
+						<td markdown="span" >
                             
-                                <strike>12th March</strike>
+							<strike>12th March</strike>
                             
-                        </td>
+						</td>
                         
                         
-                            <td markdown="span"">
-                                
-                                    N/A
-                                
-                            </td>
+						<td markdown="span"">
+						
+						N/A
+						
+						</td>
                         
-                    </tr>
-                
-                    <tr class="highlight">
-                        <td markdown="span" class="leftcell">Special Session Proposals<sup></sup></td>
-                        <td markdown="span" >
-                        
-                            <strike>15th February</strike>
-                        
-                        </td>
-                        
+						</tr>
+						
+						<tr class="highlight">
+							<td markdown="span" class="leftcell">Special Session Proposals<sup></sup></td>
+							<td markdown="span" >
+								
+								<strike>15th February</strike>
+								
+							</td>
+							
                             <td markdown="span"  colspan="2" >
-                            
+								
                                 On a rolling basis
-                            
-                        </td>
-                        
-                        
-                    </tr>
-                
-                    <tr class="">
-                        <td markdown="span" class="leftcell">Regular Papers<sup></sup></td>
-                        <td markdown="span" >
-                        
-                            <strike>24th March</strike>
-                        
-                        </td>
-                        
+								
+							</td>
+							
+							
+						</tr>
+						
+						<tr class="">
+							<td markdown="span" class="leftcell">Regular Papers<sup></sup></td>
+							<td markdown="span" >
+								
+								<strike>24th March</strike>
+								
+							</td>
+							
                             <td markdown="span" >
-                            
+								
                                 <strike>30th April</strike>
-                            
-                        </td>
-                        
-                        
+								
+							</td>
+							
+							
                             <td markdown="span"">
-                                
-                                     <strike>28th May</strike>
-                                
+							
+							<strike>28th May</strike>
+							
                             </td>
-                        
-                    </tr>
-                
-                    <tr class="highlight">
-                        <td markdown="span" class="leftcell">Auxiliary Papers<sup>2</sup></td>
-                        <td markdown="span" >
-                        
-                            <strike>14th May</strike>
-                        
-                        </td>
-                        
-                            <td markdown="span" >
-                            
-                                <strike>4th June</strike>
-                            
-                        </td>
-                        
-                        
-                            <td markdown="span"">
+							
+							</tr>
+							
+							<tr class="highlight">
+								<td markdown="span" class="leftcell">Auxiliary Papers<sup>2</sup></td>
+								<td markdown="span" >
+									
+									<strike>14th May</strike>
+									
+								</td>
+								
+								<td markdown="span" >
+									
+									<strike>4th June</strike>
+									
+								</td>
+								
+								
+								<td markdown="span"">
                                 
-                                     <strike>25th June</strike>
+								<strike>25th June</strike>
                                 
-                            </td>
-                        
-                    </tr>
-                
-                    <tr class="">
-                        <td markdown="span" class="leftcell">Games Industry Talks<sup></sup></td>
-                        <td markdown="span" >
-                        
-                            <strike>13th June</strike>
-                        
-                        </td>
-                        
-                            <td markdown="span"  colspan="2" >
-                            
-                                <strike>13th July</strike>
-                            
-                        </td>
-                        
-                        
-                    </tr>
-                
-                    <tr class="highlight">
-                        <td markdown="span" class="leftcell">Travel grants<sup></sup></td>
-                        <td markdown="span" >
-                        
-                            <strike>15th June</strike>
-                        
-                        </td>
-                        
-                            <td markdown="span"  colspan="2" >
-                            
-                                <strike>7th July</strike>
-                            
-                        </td>
-                        
-                        
-                    </tr>
-                
-                    <tr class="">
-                        <td markdown="span" class="leftcell">Early Bird Registration<sup></sup></td>
-                        <td markdown="span"  colspan="3" >
-                        
-                            <strike>30th June</strike>
-                        
-                        </td>
-                        
-                        
-                    </tr>
-                
-                    <tr class="highlight">
-                        <td markdown="span" class="leftcell">Conference<sup></sup></td>
-                        <td markdown="span"  colspan="3" >
-                        
-                            20th – 23rd August
-                        
-                        </td>
-                        
-                        
-                    </tr>
-                
-            </tbody>
-        </table>
-        </div>
-
-        <hr/>
-        <p>
-            <sup>1</sup> All times are anywhere in the world.<br/>
-            <sup>2</sup> This includes short, vision, demo and competition papers.
-        </p>
-		</div>
-		    </section>
+								</td>
+								
+								</tr>
+								
+								<tr class="">
+								<td markdown="span" class="leftcell">Games Industry Talks<sup></sup></td>
+								<td markdown="span" >
+									
+									<strike>13th June</strike>
+									
+								</td>
+								
+								<td markdown="span"  colspan="2" >
+									
+									<strike>13th July</strike>
+									
+								</td>
+								
+								
+							</tr>
+							
+							<tr class="highlight">
+								<td markdown="span" class="leftcell">Travel grants<sup></sup></td>
+								<td markdown="span" >
+									
+									<strike>15th June</strike>
+									
+								</td>
+								
+								<td markdown="span"  colspan="2" >
+									
+									<strike>7th July</strike>
+									
+								</td>
+								
+								
+							</tr>
+							
+							<tr class="">
+								<td markdown="span" class="leftcell">Early Bird Registration<sup></sup></td>
+								<td markdown="span"  colspan="3" >
+									
+									<strike>30th June</strike>
+									
+								</td>
+								
+								
+							</tr>
+							
+							<tr class="highlight">
+								<td markdown="span" class="leftcell">Conference<sup></sup></td>
+								<td markdown="span"  colspan="3" >
+									
+									20th – 23rd August
+									
+								</td>
+								
+								
+							</tr>
+							
+						</tbody>
+					</table>
+				</div>
+				
+				<hr/>
+				<p>
+					<sup>1</sup> All times are anywhere in the world.<br/>
+					<sup>2</sup> This includes short, vision, demo and competition papers.
+				</p>
+			</div>
+		</section>		
