@@ -17,7 +17,7 @@ facebook:
   app_id: 
 
 logo: "css/2016_style/img/icon-large.png"
-#"../css/2016_style/img/icon-large.png" "../css/cog_logo.png"
+#"/css/2016_style/img/icon-large.png" "/css/cog_logo.png"
 
 social: 
   name: Your Facebook Page
