@@ -5,6 +5,9 @@ http://localhost:4000/
 
 must remove baseurl: "/cog" to run local
 
+--------------
+dont put backup in folder such as _2020_pages
+--------------
 
 3cb371 >> c91038
 

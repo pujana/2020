@@ -1,0 +1,2010 @@
+
+
+    <!--background color-->
+    <script type="text/javascript">
+        document.write ('<body style="background: Gainsboro; background-attachment: fixed;">')
+    </script>
+
+	<!DOCTYPE html>
+<html>
+
+  <style type="text/css">
+    /*INCLUDE MAIN CSS FILE*/
+    
+    .black-frame {
+  overflow: hidden;
+  background: white;
+  box-sizing: border-box;
+  padding: 5%;
+  margin: 2em auto;
+  border: 1px solid #eee; }
+
+.venue-top {
+  padding-top: 50px; }
+
+.venue-map iframe {
+  height: 60vh;
+  width: 100%; }
+
+.icon-about img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  margin-top: 15px; }
+
+@media screen and (max-width: 760px) {
+  .venue-map iframe {
+    height: 45vh; } }
+.page-not-found h1 {
+  padding-top: 30vh;
+  font-size: 180%; }
+.page-not-found p {
+  font-size: 120%; }
+.page-not-found h1, .page-not-found h2, .page-not-found h3, .page-not-found p {
+  text-align: center; }
+
+.agenda {
+  table-layout: fixed;
+  width: 100%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  /* Column widths are based on these cells */ }
+  .agenda td {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-overflow: ellipsis; }
+  .agenda .agenda-time {
+    width: 40%; }
+  .agenda .agenda-actiity {
+    width: 60%; }
+  .agenda th, .agenda td {
+    border: 1px solid #00283c;
+    font-size: 120%; }
+  .agenda th {
+    background: #00283c;
+    color: white;
+    letter-spacing: 1px; }
+  .agenda td {
+    text-align: center;
+    font-size: 110%; }
+    .agenda td a {
+      color: #ff6738;
+      text-decoration: none; }
+    .agenda td b {
+      color: #ff6738; }
+  .agenda td + td {
+    text-align: left;
+    padding-left: 10px; }
+
+@media screen and (max-width: 760px) {
+  .agenda .agenda-time {
+    width: 40%; }
+  .agenda .agenda-actiity {
+    width: 60%; }
+  .agenda td, .agenda th {
+    font-size: 100%; }
+  .agenda td {
+    padding-left: 0px; }
+  .agenda td + td {
+    padding-left: 10px; } }
+h1.team-h1 {
+  position: relative;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  background-color: #3cb371;
+  color: white;
+  padding: 10px;
+  width: 100%; }
+
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */ }
+
+.cf:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  *zoom: 1; }
+
+.padding-team {
+  padding: 5%; }
+
+.team-container {
+  max-width: 1200px;
+  margin: 30px auto 30px auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .team-container *, .team-container *:before, .team-container *:after {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box; }
+
+.team-container-top {
+  margin-top: 100px; }
+
+.team-container-bottom {
+  margin-bottom: 60px; }
+
+.team-member {
+  padding: 10px 20px 10px 20px;
+  width: 16%;
+  text-align: center;
+  float: left; }
+
+.team-member:last-child {
+  margin-right: 0; }
+
+.team-member span, .team-member h3 {
+  font-family: sans-serif;
+  letter-spacing: -1px; }
+
+.team-member h3 {
+  color: SlateGray;
+  margin: 5px 0px 0px 0px; }
+
+.email {
+  color: #3cb371; }
+
+.team-member span {
+  display: block;
+  padding: 5px 0px 0px 0px; }
+
+.team-photo {
+  border-radius: 50%;
+  text-align: center;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+  transition: 0.1s transform ease-in-out; }
+
+.team-photo:hover {
+  transform: scale(0.9);
+  cursor: pointer; }
+
+@media (max-width: 1300px) {
+  .team-container {
+    max-width: 850px; } }
+@media (max-width: 1000px) {
+  .team-container {
+    max-width: 700px; } }
+/* code for phone layout */
+@media (max-width: 760px) {
+  .team-member {
+    padding: 0;
+    float: none;
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    text-align: center; }
+
+  .team-container {
+    margin: 50px 10px 10px 10px; } }
+.event {
+  padding: 5%;
+  margin: 100px 15vw 60px 15vw; }
+  .event img {
+    width: 100%; }
+  .event a {
+    color: darkblue; }
+  .event h2, .event h3, .event ol, .event p {
+    color: black;
+    text-align: left; }
+  .event p, .event ol {
+    font-size: 110%; }
+  .event h1 {
+    margin: 0;
+    text-shadow: 2px 2px black;
+    background-color: #3cb371;
+    color: white;
+    padding: 5px 5px 5px 10px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    width: 90%; }
+
+@media screen and (max-width: 1200px) {
+  .event {
+    margin: 100px 15vw 60px 15vw; } }
+@media screen and (max-width: 760px) {
+  .venue-map iframe {
+    height: 45vh; }
+
+  .event {
+    margin: 80px 10px 10px 10px; }
+
+  h1 {
+    font-size: 130%; }
+
+  h2 {
+    font-size: 120%; }
+
+  p, ol, li {
+    font-size: 100%; } }
+.about {
+  padding: 5%;
+  margin: 30px 15vw 30px 15vw; }
+  .about img {
+    max-width: 500px; }
+  .about h1 {
+    text-shadow: 2px 2px black;
+    background-color: #3cb371;
+    color: white;
+    padding: 5px 5px 5px 10px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 95% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    width: 90%; }
+  .about h2 {
+    text-shadow: 2px 2px black;
+    background-color: #3cb371;
+    color: white;
+    padding: 5px 5px 5px 10px;
+    -webkit-clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 85% 100%, 0 100%); }
+  .about h2.first {
+    width: 190px; }
+  .about h2.second {
+    width: 170px; }
+  .about h2.third {
+    width: 150px; }
+
+.about-container-top {
+  margin-top: 100px; }
+
+.about-container-bottom {
+  margin-bottom: 60px; }
+
+@media screen and (max-width: 1200px) {
+  .about {
+    margin: 20px 10vw 20px 10vw; }
+
+  .about-container-top {
+    margin-top: 100px; }
+
+  .about-container-bottom {
+    margin-bottom: 80px; } }
+@media screen and (max-width: 760px) {
+  .about {
+    margin: 10px 10px 10px 10px; }
+
+  .about-container-top {
+    margin-top: 80px; }
+
+  h1 {
+    font-size: 130%; }
+
+  h2 {
+    font-size: 120%; }
+
+  p, ol, li {
+    font-size: 100%; } }
+/*form for contact me */
+.contact form {
+  background-color: rgba(255, 255, 255, 0.9);
+  max-width: 600px;
+  margin: auto auto 50px auto;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  padding: 15px;
+  margin-top: 140px; }
+.contact input, .contact textarea {
+  font-size: 110%;
+  display: block;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-bottom: 5px;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+.contact h3 {
+  color: darkslategrey; }
+.contact a {
+  color: darkcyan; }
+@media screen and (max-width: 1200px) {
+  .contact .more-top-body {
+    margin-top: 100px; } }
+@media screen and (max-width: 760px) {
+  .contact form {
+    margin: 50px 5% 50px 5%; } }
+
+  </style>
+
+  <!-- jQuery Version 1.11.0 -->
+<script src="..\css\2016_style\js\jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="..\css\2016_style\js\bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="..\css\2016_style\js\jquery.easing.min.js"></script>
+<script src="..\css\2016_style\js\classie.js"></script>
+<script src="..\css\2016_style\js\cbpAnimatedHeader.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="..\css\2016_style\js\agency.js"></script>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Committee</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="Site for the IEEE Conference on Games (CoG) 2019 in London
+">
+    <link rel="canonical" href="index.htm">
+
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Committee | IEEE Conference on Games (CoG) 2019</title>
+<meta name="generator" content="Jekyll v3.8.5">
+<meta property="og:title" content="Committee">
+<meta property="og:locale" content="en_US">
+<meta name="description" content="Site for the IEEE Conference on Games (CoG) 2019 in London">
+<meta property="og:description" content="Site for the IEEE Conference on Games (CoG) 2019 in London">
+<link rel="canonical" href="index.htm">
+<meta property="og:url" content="http://ieee-cog.org/committee/">
+<meta property="og:site_name" content="IEEE Conference on Games (CoG) 2019">
+<meta name="google-site-verification" content="google5a1cc8ba2f829842.html">
+<script type="application/ld+json">
+{"url":"http://ieee-cog.org/committee/","headline":"Committee","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://ieee-cog.org/css/2016_style/img/icon-large.png"}},"description":"Site for the IEEE Conference on Games (CoG) 2019 in London","@type":"WebPage","@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+    <!-- Custom CSS & Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <link rel="stylesheet" href="..\css\2016_style\style.css">
+    <link rel="stylesheet" href="..\css\cog19_london\css\improvements_v2.css">
+
+    <!--Google Analytics SCRIPT-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-97610923-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!--Google Analytics SCRIPT END-->
+
+    <!--Remove image dragging -->
+    <body ondragstart="return false;" ondrop="return false;">
+
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="..\css\2016_style\font-awesome\css\font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- WEBSITE ICON IN BROWSER -->
+    <link rel="icon" type="image/png" href="..\css\cog19_london\cog_logo_ico.png">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- GDPR Cookie banner - start -->
+    <script src="https://s3-us-west-2.amazonaws.com/ieeeshutpages/gdpr/settings.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise(json)
+        });
+    </script>
+    <!-- GDPR Cookie banner - end -->
+
+</body></head>
+
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="..\index.htm"><img class="coglogotop" src="..\css\cog19_london\cog_logo.png" alt="icon-about"></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    
+                        
+                            <li class="dropdown">
+                                <a class="page-scroll dropdown-toggle" href="..\index.htm#important_dates">Info</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        
+                                            <li><a href="..\index.htm#important_dates">Important dates</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/topics">Topics and tracks</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/author_guidelines">Author guidelines</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                        
+                             <li>
+                                <a href="/registration">Registration</a>
+                            </li>
+                        
+                    
+                        
+                            <li class="dropdown">
+                                <a class="page-scroll dropdown-toggle" href="..\index.htm#calls">Calls</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        
+                                            <li><a href="/cfp">Call for Papers</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/call_industry_talks">Call for industry talks</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/tutorials">Call for tutorials</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/competitions">Call for competitions</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/special_sessions">Call for Sp. Sessions proposals</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                        
+                            <li class="dropdown">
+                                <a class="page-scroll dropdown-toggle" href="..\index.htm#program">Program</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        
+                                            <li><a href="/program">Program</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/proceedings">Proceedings</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/competitions_conference">Competitions</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/tutorials_conference">Tutorials</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/industry_day">Industry Day</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/keynotes">Keynotes</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/welcome_reception">Welcome reception</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/games_night">Games night</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                        
+                            <li class="dropdown">
+                                <a class="page-scroll dropdown-toggle" href="..\index.htm#sp_sessions">Sp. Sessions</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        
+                                            <li><a href="/special_session_esports">Esports</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/special_session_matchmaking">Matchmaking</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                        
+                            <li class="dropdown">
+                                <a class="page-scroll dropdown-toggle" href="..\index.htm#sponsorship">Sponsorship</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        
+                                            <li><a href="/call_sponsors">Call for Sponsors</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/sponsors">Sponsors</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                        
+                            <li class="dropdown">
+                                <a class="page-scroll dropdown-toggle" href="..\index.htm#about">Travel</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        
+                                            <li><a href="/travel">Information</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/accommodation">Accommodation</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/venue">Venue</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/travel_grants">Travel grants</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                        
+                            <li class="dropdown">
+                                <a class="page-scroll dropdown-toggle" href="..\index.htm#organisation">Organisation</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        
+                                            <li><a href="/committee">Committee</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="/track_chairs">Track Chairs</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                        
+                            <li class="dropdown">
+                                <a class="page-scroll dropdown-toggle" href="..\index.htm#contact">Contact</a>
+                                <ul class="dropdown-menu">
+                                    
+                                        
+                                            <li><a href="..\index.htm#contact">Contact Us</a></li>
+                                        
+                                    
+                                        
+                                            <li><a href="http://www.ice.ci.ritsumei.ac.jp/cog2020/" target="_blank">CoG 2020</a></li>
+                                        
+                                    
+                                </ul>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+<!--
+        
+          
+        
+          <a class="page-link" href="/accommodation/">Accommodation</a>
+        
+          <a class="page-link" href="/author_guidelines/">Author guidelines</a>
+        
+          <a class="page-link" href="/competitions/">Call for competitions</a>
+        
+          <a class="page-link" href="/call_industry_talks/">Call for Games Industry talks</a>
+        
+          <a class="page-link" href="/call_sponsors/">Call for Sponsors</a>
+        
+          <a class="page-link" href="/tutorials/">Call for tutorials</a>
+        
+          <a class="page-link" href="/cfp/">Call for papers</a>
+        
+          <a class="page-link" href="/committee/">Committee</a>
+        
+          <a class="page-link" href="/competitions_conference/">IEEE CoG 2019 Competitions</a>
+        
+          
+        
+          
+        
+          <a class="page-link" href="/industry_day/">Industry day</a>
+        
+          <a class="page-link" href="/keynotes/">Keynotes</a>
+        
+          <a class="page-link" href="/proceedings/">IEEE CoG 2019 Proceedings</a>
+        
+          <a class="page-link" href="/program/">Program</a>
+        
+          <a class="page-link" href="/registration/">Registration</a>
+        
+          
+        
+          <a class="page-link" href="/games_night/">Games Night</a>
+        
+          <a class="page-link" href="/welcome_reception/">Welcome Reception</a>
+        
+          <a class="page-link" href="/special_session_esports/">Special Session - Esports Research: Challenges, Advances and Opportunities</a>
+        
+          <a class="page-link" href="/special_session_matchmaking/">Special Session - Matchmaking in Games</a>
+        
+          <a class="page-link" href="/special_sessions/">Call for Special Session Proposals</a>
+        
+          <a class="page-link" href="/sponsors/">IEEE CoG 2019 Sponsors</a>
+        
+          
+        
+          <a class="page-link" href="/topics/">IEEE CoG 2019 Topics and Tracks</a>
+        
+          <a class="page-link" href="/track_chairs/">Track chairs</a>
+        
+          <a class="page-link" href="/travel/">Travel information</a>
+        
+          <a class="page-link" href="/travel_grants/">Travel grants</a>
+        
+          <a class="page-link" href="/tutorials_conference/">IEEE CoG 2019 Tutorials</a>
+        
+          <a class="page-link" href="/venue/">Venue</a>
+        
+          
+        
+ -->
+
+            <!-- Portfolio Grid Section -->
+    <section id="speakers" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center"><br><br>
+                    <h2 class="section-heading">Organising Committee</h2>
+                    <h3 class="section-subheading text-muted"></h3>
+                </div>
+            </div>
+            <div class="row">
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-1" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>General Chair</h4>
+                        <p>
+                          Diego Perez-Liebana<br>
+                          <i class="text-muted">Queen Mary University of London</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-2" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>General Chair</h4>
+                        <p>
+                          Sanaz Mostaghim<br>
+                          <i class="text-muted">Otto-von-Guericke University Magdeburg</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-3" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Program Chair</h4>
+                        <p>
+                          Amy K. Hoover<br>
+                          <i class="text-muted">New Jersey Institute of Technology</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-4" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Program Chair</h4>
+                        <p>
+                          Simon M. Lucas<br>
+                          <i class="text-muted">Queen Mary University of London</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-5" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Program Chair</h4>
+                        <p>
+                          Georgios Yannakakis<br>
+                          <i class="text-muted">University of Malta</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-6" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Local Chair</h4>
+                        <p>
+                          Laurissa Tokarchuck<br>
+                          <i class="text-muted">Queen Mary University of London</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-22" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Local Chair</h4>
+                        <p>
+                          Carlos González Díaz<br>
+                          <i class="text-muted">University of York</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-7" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Keynote Chair</h4>
+                        <p>
+                          Jichen Zhu<br>
+                          <i class="text-muted">Drexel University</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-8" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Tutorial Chair</h4>
+                        <p>
+                          Gillian Smith<br>
+                          <i class="text-muted">Worcester Polytechnic Institute</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-9" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Competition Chair</h4>
+                        <p>
+                          Julian Togelius<br>
+                          <i class="text-muted">New York University</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-10" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Competition Chair</h4>
+                        <p>
+                          Mike Preuss<br>
+                          <i class="text-muted">Leiden University</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-11" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Industry Chair</h4>
+                        <p>
+                          Sam Devlin<br>
+                          <i class="text-muted">Microsoft Research</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-12" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Industry Chair</h4>
+                        <p>
+                          Xenija Neufeld<br>
+                          <i class="text-muted">Otto-von-Guericke University Magdeburg</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-20" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Industry Chair</h4>
+                        <p>
+                          Duygu Çakmak<br>
+                          <i class="text-muted">Creative Assembly</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-21" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Industry Chair</h4>
+                        <p>
+                          Anders Drachen<br>
+                          <i class="text-muted">University of York</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-13" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Special Session Chair</h4>
+                        <p>
+                          Dan Ashlock<br>
+                          <i class="text-muted">University of Guelph</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-14" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Finance Chair</h4>
+                        <p>
+                          Mark Winands<br>
+                          <i class="text-muted">Maastricht University</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-15" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Proceedings Chair</h4>
+                        <p>
+                          Vanessa Volz<br>
+                          <i class="text-muted">TU Dortmund</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-16" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Demonstrations Chair</h4>
+                        <p>
+                          Antonios Liapis<br>
+                          <i class="text-muted">University of Malta</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-17" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Publicity and Media Chair</h4>
+                        <p>
+                          Raluca D. Gaina<br>
+                          <i class="text-muted">Queen Mary University of London</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-18" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Publicity and Media Chair</h4>
+                        <p>
+                          Jialin Liu<br>
+                          <i class="text-muted">Southern University of Science and Technology</i>
+                          
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-23" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Registration Chair</h4>
+                        <p>
+                          Ivan Bravi<br>
+                          <i class="text-muted">Queen Mary University of London</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+                <div class="col-md-4 col-sm-6 speakers-item">
+                    <a href="#com-19" class="speakers-link" data-toggle="modal">
+                        <div class="speakers-hover">
+                            <div class="speakers-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <!--<img src="/css/2017_style/img/team/" class="img-responsive img-centered" alt="">-->
+
+                    <div class="speakers-caption">
+                        <h4>Webmaster</h4>
+                        <p>
+                          Pujana Paliyawan<br>
+                          <i class="text-muted">Research Organization of Science and Technology, Ritsumeikan University, Japan</i>
+                          <br><br>
+                        </p>
+                    </div>
+                    </a>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+     <!-- Portfolio Modals -->
+ 
+ <div class="portfolio-modal modal fade" id="com-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Diego Perez-Liebana</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>General Chair</h3>
+                            Queen Mary University of London
+                            <p>Diego Perez-Liebana is a Lecturer in Computer Games and Artificial Intelligence at Queen Mary University of London (UK). He achieved a Ph.D. in Computer Science at the University of Essex (2015). His research interests are Search Algorithms, Evolutionary Computation and Reinforcement Learning applied to Real-time Games and General Video Game Playing. He is author of more than 70 papers at main conferences and journals, including IEEE CIG, IEEE Transactions on Evolutionary Computation and IEEE Transactions on CI and AI in Games (now IEEE Transactions on Games). He has organised several international competitions on Game AI, such as the Physical Travelling Salesman Problem, the Multi-Agent Reinforcement Learning in Malmo, and the GVGAI Competition. He also served as competitions chair at IEEE CEEC 2015, 2016, track chair at nucl.ai 2015 and 2016, IEEE CIG 2016 and 2018, and he’s member of the CIS Student Games-Based Competitions Sub-Committee. He has several years of experience in the videogames industry, working as a games programmer (Revistronic; Spain), with titles published for both PC and consoles and as an AI for videogames developer (Game Brains; Ireland). He has lectured many modules including games programming and Game AI.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="portfolio-modal modal fade" id="com-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Diego Perez-Liebana</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>General Chair</h3>
+                            Queen Mary University of London
+                            <p>Diego Perez-Liebana is a Lecturer in Computer Games and Artificial Intelligence at Queen Mary University of London (UK). He achieved a Ph.D. in Computer Science at the University of Essex (2015). His research interests are Search Algorithms, Evolutionary Computation and Reinforcement Learning applied to Real-time Games and General Video Game Playing. He is author of more than 70 papers at main conferences and journals, including IEEE CIG, IEEE Transactions on Evolutionary Computation and IEEE Transactions on CI and AI in Games (now IEEE Transactions on Games). He has organised several international competitions on Game AI, such as the Physical Travelling Salesman Problem, the Multi-Agent Reinforcement Learning in Malmo, and the GVGAI Competition. He also served as competitions chair at IEEE CEEC 2015, 2016, track chair at nucl.ai 2015 and 2016, IEEE CIG 2016 and 2018, and he’s member of the CIS Student Games-Based Competitions Sub-Committee. He has several years of experience in the videogames industry, working as a games programmer (Revistronic; Spain), with titles published for both PC and consoles and as an AI for videogames developer (Game Brains; Ireland). He has lectured many modules including games programming and Game AI.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <div class="portfolio-modal modal fade" id="com-1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Diego Perez-Liebana</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>General Chair</h3>
+                            Queen Mary University of London
+                            <p>Diego Perez-Liebana is a Lecturer in Computer Games and Artificial Intelligence at Queen Mary University of London (UK). He achieved a Ph.D. in Computer Science at the University of Essex (2015). His research interests are Search Algorithms, Evolutionary Computation and Reinforcement Learning applied to Real-time Games and General Video Game Playing. He is author of more than 70 papers at main conferences and journals, including IEEE CIG, IEEE Transactions on Evolutionary Computation and IEEE Transactions on CI and AI in Games (now IEEE Transactions on Games). He has organised several international competitions on Game AI, such as the Physical Travelling Salesman Problem, the Multi-Agent Reinforcement Learning in Malmo, and the GVGAI Competition. He also served as competitions chair at IEEE CEEC 2015, 2016, track chair at nucl.ai 2015 and 2016, IEEE CIG 2016 and 2018, and he’s member of the CIS Student Games-Based Competitions Sub-Committee. He has several years of experience in the videogames industry, working as a games programmer (Revistronic; Spain), with titles published for both PC and consoles and as an AI for videogames developer (Game Brains; Ireland). He has lectured many modules including games programming and Game AI.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Sanaz Mostaghim</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>General Chair</h3>
+                            Otto-von-Guericke University Magdeburg
+                            <p>Sanaz Mostaghim is a full professor of computer science at the Otto-von-Guericke University Magdeburg, Germany. She holds a Ph.D. degree in electrical engineering and computer science from the University of Paderborn, Germany. She worked as a postdoctoral fellow at ETH Zurich in Switzerland and as a lecturer at Karlsruhe Institute of technology (KIT), Germany. Her research interests are in the area of evolutionary multi-objective optimization, swarm intelligence, and their applications in robotics, science and industry. She serves as an associate editor for the IEEE Transactions on Evolutionary Computation, IEEE Transactions on Cybernetics, IEEE Transactions on System, Man and Cybernetics - Systems and IEEE Transactions on Emerging Topics in Computational Intelligence.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Amy K. Hoover</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Program Chair</h3>
+                            New Jersey Institute of Technology
+                            <p>Amy K. Hoover is currently an Assistant Professor of Informatics at the New Jersey Institute of Technology. Formerly she was a postdoctoral researcher in the Playable Innovative Technologies Lab (PLAIT) at Northeastern University with Gillian Smith and Casper Harteveld and was formerly a postdoctoral researcher at the Institute of Digital Games at the University of Malta with Georgios Yannakakis. Her research acknowledges that humans and computers excel in different areas of the creative process, and draws on these unique talents to build systems that harness the power of each. Conceptualizing creativity as a search in a structured space of computational artifacts, she researches constructing such search spaces and search methods to solve a given problem or produce a desired experience, with effective search and modes of human-computer collaboration as core concerns.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-4" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Simon M. Lucas</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Program Chair</h3>
+                            Queen Mary University of London
+                            <p>Simon M. Lucas is a professor of Computer Science at Queen Mary University of London (UK) where he is the Head of School and leads the Game Artificial Intelligence Group. He holds a Ph.D. degree (1991) in Electronics and Computer Science from the University of Southampton. His main research interests are games, evolutionary computation, and machine learning, and he has published widely in these fields with over 180 peer-reviewed papers. He is the inventor of the scanning n-tuple classifier, and is the founding Editor-in-Chief of the IEEE Transactions on Computational Intelligence and AI in Games.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-5" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Georgios Yannakakis</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Program Chair</h3>
+                            University of Malta
+                            <p>Georgios Yannakakis (yannakakis.net) is an Associate Professor and Director of the Institute of Digital Games, University of Malta. He is a leading expert of the game artificial intelligence research field with core theoretical contributions in machine learning, evolutionary computation, affective computing and player modelling, computational creativity and procedural content generation. He has published more than 200 papers and his work has been cited broadly. He has attracted funding from several EU and national research projects (mainly FP7, H2020) and received multiple awards for published work in top-tier journals and conferences. His work has been featured in New Scientist, Science Magazine, The Guardian, Le Monde and other venues. He is regularly invited to give keynote talks in the most recognised conferences in his areas of research activity and has organized a few of the most respected conferences in the areas of game AI and game research (IEEE CIG and FDG). He is an Associate Editor of the IEEE Transactions on Computational Intelligence and AI in Games journal and the co-author of the AI and Games textbook (gameaibook.org)</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-6" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Laurissa Tokarchuck</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Local Chair</h3>
+                            Queen Mary University of London
+                            <p></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-22" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Carlos González Díaz</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Local Chair</h3>
+                            University of York
+                            <p></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-7" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Jichen Zhu</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Keynote Chair</h3>
+                            Drexel University
+                            <p>Jichen Zhu is an Associate Professor of Digital Media at Drexel University, with a joint courtesy appointment in Computer Science. She directs the Procedural eXpression Lab (PXL) and co-directs the Games, Artificial Intelligence, and Media Systems (GAIMS) Research Center. Her research focuses on the intersection of artificial intelligence (AI), human-computer interaction, creative expression, and critical/media theory. Her particular emphasis is developing new forms of cultural artifacts afforded by intelligent systems as well as innovating new AI techniques informed by design goals. Her current interests include interactive narrative, adaptive games, computational creativity, and digital humanities. Jichen received a Ph.D. in Digital Media from Georgia Tech. She also holds a MS in Computer Science from Georgia Tech, a Master of Entertainment Technology from Carnegie Mellon University, and a BS from McGill University.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-8" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Gillian Smith</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Tutorial Chair</h3>
+                            Worcester Polytechnic Institute
+                            <p>Gillian Smith is an assistant professor in Computer Science and Interactive Media & Game Development at Worcester Polytechnic Institute. She received the B.S. degree in computer science from the University of Virginia, Charlottesville, in 2006 and the M.S. degree in computer science from the University of California Santa Cruz, Santa Cruz, in 2009, where she received a Ph.D. degree in computer science. Her research focuses on generative design for games and crafts, computational creativity, and issues surrounding feminism and social justice especially as they intersect with technology and game design. She is also interested in games for education.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-9" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Julian Togelius</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Competition Chair</h3>
+                            New York University
+                            <p>Julian Togelius is an Associate Professor in the Department of Computer Science and Engineering, New York University, USA. He works on all aspects of computational intelligence and games and on selected topics in evolutionary computation and evolutionary reinforcement learning. His current main research directions involve search-based procedural content generation in games, general video game playing, player modeling, and fair and relevant benchmarking of AI through game-based competitions. He is the Editor-in-Chief of IEEE Transactions on Games, and has been chair or program chair of several of the main conferences on AI and Games. Togelius holds a BA from Lund University, an M.Sc. from the University of Sussex, and a Ph.D. from the University of Essex. He has previously worked at IDSIA in Lugano and at the IT University of Copenhagen.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-10" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mike Preuss</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Competition Chair</h3>
+                            Leiden University
+                            <p>Mike Preuss is Assistant Professor at LIACS, the computer science institute of Universiteit Leiden in the Netherlands. Previously, he was with ERCIS (the information systems institute of WWU Muenster, Germany), and before with the Chair of Algorithm Engineering at TU Dortmund, Germany, where he received his PhD in 2013. His research interests focus on the field of evolutionary algorithms for real-valued problems, namely on multimodal and multiobjective optimization, and on computational intelligence methods for computer games, especially in procedural content generation (PGC) and realtime strategy games (RTS).<br>He is also interested in applying the game AI techniques to engineering problems, e.g., chemical retrosynthesis. Since 2016, he is involved in the PropStop project that deals with the detection of Propaganda on social media.<br>He is associate editor of the IEEE ToG (Transactions on Games) and advisory board member of Springer’s Natural Computing book series and has been member of the organizational team of several conferences in the last years, in various functions, as general co-chair, proceedings chair, competition chair, workshops chair, notably also as PC co-chair for CIG 2018.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-11" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Sam Devlin</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Industry Chair</h3>
+                            Microsoft Research
+                            <p>Dr Sam Devlin is a researcher in games and AI at Microsoft Research Cambridge. He received an MEng degree in Computer Systems and Software Engineering from the University of York in 2009 including internships at BAE Systems and Morgan Stanley. Completed his PhD on multi-agent reinforcement learning at the University of York in 2013, including development of AI middleware for the open source game engine CrystalSpace as part of the Google Summer of Code program and visited Oregon State University funded by a Santander International Connections Award. Before starting at Microsoft Research, he was a Research Associate from 2013-2015 on the EPSRC funded New Economic Models and Opportunities for digital Games project working on data mining for collective game intelligence, and then a research fellow/lecturer from 2015-2017 in the Digital Creativity Labs where he led a team focussed on integrating decision making AI into modern commercial videogames.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-12" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Xenija Neufeld</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Industry Chair</h3>
+                            Otto-von-Guericke University Magdeburg
+                            <p>Xenija Neufeld is a Ph.D. student in computer science at the Otto-von-Guericke University Magdeburg, Germany. She received her M.Sc. degree in computer science from the Otto-von- Guericke University Magdeburg in 2016. Her research interests are multi-agent coordination and task planning. Currently, she is working at Crytek, a game developing company in Frankfurt, Germany trying to establish a better cooperation between the games industry and academia.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-20" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Duygu Çakmak</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Industry Chair</h3>
+                            Creative Assembly
+                            <p></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-21" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Anders Drachen</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Industry Chair</h3>
+                            University of York
+                            <p></p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-13" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Dan Ashlock</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Special Session Chair</h3>
+                            University of Guelph
+                            <p>Daniel Ashlock received his doctorate in mathematics at CalTech. He has been a researcher in computational intelligence since 1994 working in optimization, representation, theory, bioinformatics, mathematical games, and automatic content generation. His primary focus is understanding issues concerning representation, with the principle research tool consisting of solving a broad variety of problems as a way for enabling search of the space of possible representations. Dr. Ashlock currently has 270 peer reviewed scientific publications and serves as an associate editor for several IEEE and Computational Intelligence journals including the Transactions on Evolutionary Computation and the Transactions on Games. He serves on both the Bioinformatics and Games technical committees of the computational intelligence society.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-14" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Mark Winands</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Finance Chair</h3>
+                            Maastricht University
+                            <p>Mark Winands is an associate professor at the Department of Data Science and Knowledge Engineering, Maastricht University. He received a Ph.D. degree in Artificial Intelligence from the Department of Computer Science, Maastricht University in 2004. He has co-organized the International Conference on Computers and Games 2008, the Benelux Conference on Artificial Intelligence 2012, and the Computer Games Workshops at IJCAI 2013/2015/2016/2017 and ECAI 2012/2014. He has been the program chair of the 15th International Conference on Advances in Computer Games, and he is currently the general chair of the 2018 IEEE Conference on Computational Intelligence and Games. He serves as the editor-in-chief of the ICGA Journal, editor of Game & Puzzle Design, and as an associate editor of IEEE Transactions on Computational Intelligence & AI in Games (TCIAIG). He is a member of Games Technical Committee (GTC) | IEEE Computational Intelligence Society. He has been guest editor for special issues in TCIAIG and Entertainment Computing. His research interests include heuristic search, machine learning and games. He has written more than eighty scientific publications on AI and Games.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-15" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Vanessa Volz</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Proceedings Chair</h3>
+                            TU Dortmund
+                            <p>Vanessa Volz is a research associate at TU Dortmund, Germany, with focus in computational intelligence. She holds B.Sc. degrees in Information Systems and in Computer Science from WWU Münster, Germany. She received an M.Sc. with distinction in Advanced Computing - Machine Learning, Data Mining and High Performance Computing from University of Bristol, UK in 2014 after completing a BigData internship at Brown University, RI, USA. Her current research focus is on employing surrogate-assisted evolutionary algorithms to obtain balance and robustness in systems with interacting human and artificial agents, especially in the context of games.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-16" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Antonios Liapis</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Demonstrations Chair</h3>
+                            University of Malta
+                            <p>Antonios Liapis is currently a Lecturer at the Institute of Digital Games (University of Malta). He does research at the crossroads of game design, artificial intelligence and computational creativity. More specifically, he explores the limits of computational input to the human-driven design process in computer-aided design tools. Beyond AI-assisted game design, his research pursuits revolve around procedural content generation, digital aesthetics, evolutionary computation, neuroevolution and constrained optimization. He has published over 70 international journal, conference and workshop papers, is an associate editor of the IEEE Transactions on Games, and has served as co-organizer of 9 workshops (at AIIDE, ICCC, FDG, and CHI) and as the local chair of Computational Intelligence and Games conference (2016). Finally, he has served the International Conference on Computational Intelligence in Music, Sound, Art and Design (EvoMusArt) as Proceedings Chair (2017) and General Chair (2018-2019) and is the general chair of the Games and Learning Alliance conference (2019).</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-17" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Raluca D. Gaina</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Publicity and Media Chair</h3>
+                            Queen Mary University of London
+                            <p>Raluca D. Gaina is currently studying for her Ph.D. in Intelligent Games and Games Intelligence at Queen Mary University of London, in the area of rolling horizon evolution in general video game playing, after completing a B.Sc. and M.Sc. in Computer Games at the University of Essex. She completed her first year of Ph.D. at the University of Essex (transfer to Queen Mary) with 7 conference papers and a journal in the final stages of acceptance. Her research interests include general video game playing AI, reinforcement learning and evolutionary algorithms.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-18" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Jialin Liu</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Publicity and Media Chair</h3>
+                            Southern University of Science and Technology
+                            <p>Jialin Liu is currently a Research Assistant Professor at the Department of Computer Science and Engineering of Southern University of Science and Technology (SUSTech, China). Before joining SUSTech, she was a Postdoctoral Research Associate at Queen Mary University of London (QMUL, UK) and one of the founding members of the Game AI research group of QMUL. Jialin holds a Ph.D. Degree in Computer Science from the Inria Saclay and the Université Paris-Saclay (France). Her research interests include AI and games, noisy optimisation, portfolio of algorithms and meta-heuristics. Jialin serves as Program Co-Chair of IEEE CIG2018, and Competition Chair of FDG2018, FDG2019 and IEEE CEC2019. She also serves as an associate editor for the IEEE Transactions on Games.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-23" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Ivan Bravi</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Registration Chair</h3>
+                            Queen Mary University of London
+                            <p>Ivan Bravi has obtained his B.Sc and M.Sc in Engineering of Computer Systems at the Politecnico di Milano, Italy. From January to July 2016 he was Visiting Scholar at the NYU's Game Innovation Lab in New York under the supervision of Prof. Julian Togelius. Since October 2017 he's an IGGI PhD student at Queen Mary University of London under the supervision of Simon Lucas. He has published several workshop and conference papers in different venues such as IJCAI, Evostar, FDG, AAAI and CIG. Currently his main interests lay in the area of Artificial General Intelligence applied to games.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="com-19" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                            <h2>Cristina Guerrero-Romero</h2>
+                            <hr class="star-primary">
+                            <!--<img src="../css/2017_style/img/speaker/" class="img-responsive img-centered" alt="">-->
+                            <h3>Pujana Paliyawan</h3>
+                            Research Organization of Science and Technology, Ritsumeikan University, Japan
+                            <p>Pujana Paliyawan received his D.Eng. from the Graduate School of Information Science and Engineering, Ritsumeikan University, Japan, in 2018. His research interests include AI, HCI, and health monitoring systems.</p>
+                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+  </body>
+  <footer>
+    <div class="container">
+        <div class="row">
+        
+            <a href="https://eu.wargaming.net/" target="_blank"><img class="logo" src="..\css\cog19_london\img\sponsors\wg_logo.png" alt="Logo of Wargaming"></a>
+        
+            <a href="https://unity.com/" target="_blank"><img class="logo" src="..\css\cog19_london\img\sponsors\unity_logo.png" alt="Logo of Unity"></a>
+        
+            <a href="https://www.microsoft.com/" target="_blank"><img class="logo" src="..\css\cog19_london\img\sponsors\ms_logo.png" alt="Logo of Microsoft"></a>
+        
+            <a href="https://www.creative-assembly.com/" target="_blank"><img class="logo" src="..\css\cog19_london\img\sponsors\CA_logo.png" alt="Logo of Creative Assembly"></a>
+        
+            <a href="https://www.draughtslondon.com/" target="_blank"><img class="logo" src="..\css\cog19_london\img\sponsors\draughts_logo.png" alt="Logo of Draughts"></a>
+        
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <a href="https://cis.ieee.org/" target="_blank"><img class="logo" src="..\css\cog19_london\img\images\CIS.jpg" alt="CIS_logo"></a>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    
+                        <li><a href="https://twitter.com/cog2019ieee" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    
+                        <li><a href="..\css\cog19_london\img\contact\qrcode_wechat_cog2019.jpg" target="_blank"><i class="fa fa-wechat"></i></a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+          <span class="copyright">© 2019 <a href="https://github.com/melvinchng/event-jekyll-theme">Event Jekyll Theme</a> by <a href="http://melvinchng.github.io">Melvin Ch'ng</a>.</span>
+        </div>
+    </div>
+</footer>
+
+</html>
+
+    </section>
+
