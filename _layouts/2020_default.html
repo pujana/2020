@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+	
   <style type="text/css">
     /*INCLUDE MAIN CSS FILE*/
     {% capture criticalcss %}
@@ -16,6 +16,18 @@
     {% include /2020_data/header-home.html %}
         {{ content }}
   </body>
-    {% include 2020_data/sponsors.html %}
+  {% include /2020_data/sponsors.html %}
   {% include /2020_data/footer.html %}
+  
 </html>
+
+<script type="text/javascript">
+	header = document.querySelector( '.navbar-fixed-top' );
+	classie.add( header, 'navbar-black' );
+</script>
+<style type="text/css">
+	.navbar-default.navbar-black {
+		padding: 10px 0;
+		background-color: #222;
+	}
+</style>
