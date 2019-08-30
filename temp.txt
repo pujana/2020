@@ -1,0 +1,13 @@
+https://pujana.github.io/cog2020/topics
+
+
+
+Please also double check all the fares (in particular train and bus) in
+https://pujana.github.io/cog2020/travel
+>> I got them from "CoG 2020 Proposal_final.pdf"
+I have checked them, they are correct
+
+
+Could you make the Google map in the bottom displayed in English?
+>> I think the language depends on Google Account Setting of the client. I saw them in English language. 
+However, names of some places are in Japanese because their English names are not available.
