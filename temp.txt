@@ -2,8 +2,7 @@ https://pujana.github.io/cog2020/topics
 
 
 
-Double check all the fares (in particular train and bus) in
-https://pujana.github.io/cog2020/travel
+All the fares (in particular train and bus) in https://pujana.github.io/cog2020/travel
 >> I got them from "CoG 2020 Proposal_final.pdf"
 I will double check them with Hyperdia and confirm again
 
