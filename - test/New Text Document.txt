@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_URI} !^/2020/ [NC]
+RewriteRule .* 2020/$0 [L]
